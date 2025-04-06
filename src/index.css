@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* גופן רוביק לעברית */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+/* הגדרות בסיסיות */
+html, body {
+  direction: rtl;
+  font-family: 'Rubik', sans-serif;
+  background-color: #F9F7F7;
+  color: #333333;
+}
+
+/* עיצוב בסיסי של כפתורים */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-normal transition duration-200 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border border-primary text-primary hover:bg-primary-light hover:bg-opacity-10;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 bg-white hover:bg-gray-50;
+  }
+
+  .btn-danger {
+    @apply bg-error text-white hover:bg-opacity-90;
+  }
+  
+  .btn-success {
+    @apply bg-success text-white hover:bg-opacity-90;
+  }
+  
+  /* עיצוב קלט */
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-normal focus:ring-2 focus:ring-primary focus:ring-opacity-50 focus:border-primary outline-none transition;
+  }
+  
+  /* עיצוב כרטיסיות */
+  .card {
+    @apply bg-white rounded-large shadow-card p-4 mb-4;
+  }
+  
+  /* עיצוב תגיות */
+  .tag {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-light bg-opacity-20 text-primary-dark;
+  }
+}
+
+/* עיצובים מיוחדים לאנימציות */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
