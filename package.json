@@ -10,19 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rollup/rollup-win32-x64-msvc": "^4.39.0",
     "axios": "^1.8.4",
     "framer-motion": "^12.6.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.2.0",  
+    "react-dom": "^18.2.0",  
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.5.0",
     "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
+    "@types/react": "^18.2.48",  
+    "@types/react-dom": "^18.2.18", 
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.21.0",
@@ -30,6 +29,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "postcss": "^8.5.3",
+    "rollup": "^4.9.6",  
     "tailwindcss": "^3.3.3",
     "vite": "^6.2.0"
   }
